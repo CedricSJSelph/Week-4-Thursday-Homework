@@ -19,13 +19,13 @@ public class EliminateDuplicates {
 		
 		System.out.print("Your List without Duplicates is: ");
 		
+		if(New_List[0] == 0) {
+			System.out.print(0 + " ");
+		}
 		for(int l = 0; l < New_List.length; l++) {
-			
-			
-			
+		
 			if(New_List[l] != 0) {
-				
-				
+			
 				System.out.print(New_List[l] + " ");
 			}
 			
