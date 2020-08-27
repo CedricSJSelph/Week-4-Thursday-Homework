@@ -19,16 +19,12 @@ public class EliminateDuplicates {
 		
 		System.out.print("Your List without Duplicates is: ");
 		
-		if(New_List[0] == 0) {
-			
-			System.out.print(0 + " ");
-			
-		}
-		
 		for(int l = 0; l < New_List.length; l++) {
 			
-			//Duplicates are now zero, irrelevant
+			
+			
 			if(New_List[l] != 0) {
+				
 				
 				System.out.print(New_List[l] + " ");
 			}
@@ -41,23 +37,22 @@ public class EliminateDuplicates {
 		
 		java.util.Arrays.sort(list);
 		
-		int New_List[] = new int[10];;
-	
-		//Checks each position individually
+		//Checks each position to the rest
 		for (int i = 0; i < list.length; i++){
 			
-			//Compares to rest 
+			//Compares to rest
 		    for (int j = 1; j < list.length; j++) {
 		    	
-		    	if(list[i] != list[j]) {
-		    		
-		    		System.out.print(list[i]);
+		    	if(i != j && list[i] == list[j]) {
+		                	
+		               list[j] = 0;
+		              
 		    	}
-		    	
 		    }
 		}
-		return New_List;                   
+		
+		return list;
+		          
+		                   
 	}
 }
-
-	
